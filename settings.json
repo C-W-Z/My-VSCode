@@ -1,0 +1,64 @@
+{
+    /* 貼上時是否自動format */
+    "editor.formatOnPaste": false,
+    /* 文字超出畫面是否換行 */
+    "editor.wordWrap": "on",
+    /* 是否根據文件自動偵測editor.insertSpaces和editor.tabSize */
+    "editor.detectIndentation": true,
+    /* 按tab是否改成輸入空格 */
+    "editor.insertSpaces": false,
+    /* 按tab輸入幾個空格 */
+    "editor.tabSize": 4,
+    /* 是否顯示空白和tab字元 */
+    "editor.renderControlCharacters": true,
+    /* 何時顯示空白和tab字元 */
+    "editor.renderWhitespace": "all",
+    /* 終端機是否啟用GPU加速 */
+    "terminal.integrated.gpuAcceleration": "off",
+    /* 是否在小地圖中渲染字體 */
+    "editor.minimap.renderCharacters": false,
+    /* 開關右邊小地圖 */
+    "editor.minimap.enabled": false,
+    /* 開關平滑滾動 */
+    "editor.smoothScrolling": false,
+    /* 開關光標平滑滾動 */
+    "editor.cursorSmoothCaretAnimation": "on",
+    /* 是否顯示括號配對輔助線 */
+    "editor.guides.bracketPairs": true,
+    /* 是否啟用隱形字元的醒目提示 */
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    /* 是否啟用和ASCII混淆的字元的醒目提示 */
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+    /* 針對python */
+    "[python]": {
+        /* 貼上時是否自動format */
+        "editor.formatOnType": true
+    },
+    /* 自訂VSCode語法高亮顏色 */
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.control",
+                "name": "if for while return #define #include .etc",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ],
+        "[Default Dark+]": {
+            "comments": "#c0c0c0",
+            "functions": "#CCC541",
+            "numbers": "#4FBD74"
+        }
+    },
+    /* VSCode的圖示主題 */
+    "workbench.iconTheme": "material-icon-theme",
+    /* VSCode的顏色主題 */
+    "workbench.colorTheme": "Default Dark+",
+    /* 自訂VSCode主題中各種顏色 */
+    "workbench.colorCustomizations": {
+        "editor.background": "#1E1E1E"
+    },
+    /* 視窗標題列和功能表的外觀 */
+    "window.titleBarStyle": "custom"
+}
