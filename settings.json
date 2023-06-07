@@ -1,6 +1,12 @@
 {
     /* 字型 */
     "editor.fontFamily": "XD, Consolas, 'Courier New', monospace",
+    /* 字體粗細 */
+    "editor.fontWeight": "200",
+    /* 什麼時候顯示折疊(在行號旁) */
+    "editor.showFoldingControls" :"mouseover",
+    /* 提示出現的延遲(ms) */
+    "editor.quickSuggestionsDelay": 10,
     /* 貼上時是否自動format */
     "editor.formatOnPaste": false,
     /* 文字超出畫面是否換行 */
@@ -25,6 +31,8 @@
     "editor.smoothScrolling": false,
     /* 開關光標平滑滾動 */
     "editor.cursorSmoothCaretAnimation": "on",
+    /* 游標閃爍模式 */
+    "editor.cursorBlinking": "smooth",
     /* 是否顯示括號配對輔助線 */
     "editor.guides.bracketPairs": true,
     /* 是否啟用隱形字元的醒目提示 */

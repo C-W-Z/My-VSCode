@@ -4,6 +4,7 @@
 - Doxygen Documentation Generator
 - Image preview
 - IntelliCode
+- indent-rainbow
 - Live Preview
 - Preview on Web Server
 - Polacode-2022
