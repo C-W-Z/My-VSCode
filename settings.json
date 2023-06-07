@@ -21,8 +21,6 @@
     "editor.renderControlCharacters": true,
     /* 何時顯示空白和tab字元 */
     "editor.renderWhitespace": "all",
-    /* 終端機是否啟用GPU加速 */
-    "terminal.integrated.gpuAcceleration": "off",
     /* 是否在小地圖中渲染字體 */
     "editor.minimap.renderCharacters": false,
     /* 開關右邊小地圖 */
@@ -48,8 +46,8 @@
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
+                "name": "if/for/while/return/#define/#include",
                 "scope": "keyword.control",
-                "name": "if for while return #define #include .etc",
                 "settings": {
                     "fontStyle": "italic"
                 }
@@ -58,7 +56,16 @@
         "[Default Dark+]": {
             "comments": "#27a818",
             "functions": "#CCC541",
-            "numbers": "#fa8500"
+            "numbers": "#fa8500",
+            "textMateRules": [
+                {
+                    "name": "parameters of functions",
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                }
+            ]
         }
     },
     /* VSCode的圖示主題 */
@@ -70,5 +77,15 @@
         "editor.background": "#1E1E1E"
     },
     /* 視窗標題列和功能表的外觀 */
-    "window.titleBarStyle": "custom"
+    "window.titleBarStyle": "custom",
+    /* 終端機是否啟用GPU加速 */
+    "terminal.integrated.gpuAcceleration": "off",
+    /* 預設終端機 */
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    /* 終端機游標閃爍 */
+    "terminal.integrated.cursorBlinking": true,
+    /* 終端機游標樣式 */
+    "terminal.integrated.cursorStyle": "line",
+    /* 終端機游標寬度(只有游標樣式為line時有效) */
+    "terminal.integrated.cursorWidth": 1
 }
