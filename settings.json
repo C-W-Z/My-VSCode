@@ -1,4 +1,6 @@
 {
+    /* 字型 */
+    "editor.fontFamily": "XD, Consolas, 'Courier New', monospace",
     /* 貼上時是否自動format */
     "editor.formatOnPaste": false,
     /* 文字超出畫面是否換行 */
@@ -46,15 +48,13 @@
             }
         ],
         "[Default Dark+]": {
-            "comments": "#c0c0c0",
+            "comments": "#27a818",
             "functions": "#CCC541",
-            "numbers": "#4FBD74"
+            "numbers": "#fa8500"
         }
     },
     /* VSCode的圖示主題 */
     "workbench.iconTheme": "material-icon-theme",
-    /* VSCode的顏色主題 */
-    "workbench.colorTheme": "Default Dark+",
     /* 自訂VSCode主題中各種顏色 */
     "workbench.colorCustomizations": {
         "editor.background": "#1E1E1E"
