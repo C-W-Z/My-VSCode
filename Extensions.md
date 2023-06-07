@@ -1,25 +1,35 @@
-Binary Viewer
-Doxygen Documentation Generator
-Image preview
-IntelliCode
-Live Preview
-Polacode-2022
-Remote - SSH
-Custom CSS and JS Loader
+## Tools
+- Binary Viewer
+- Custom CSS and JS Loader
+- Doxygen Documentation Generator
+- Image preview
+- IntelliCode
+- Live Preview
+- Preview on Web Server
+- Polacode-2022
+- Remote - SSH
 
-C/C++
-C#
-HTML CSS Support
-Python
-isort
-GitHub Markdown Preview
+## Languages
+- C/C++ Extension Pack
+- C#
+- Extension Pack for Java
+- Gradle Extension Pack
+- GitHub Markdown Preview
+- HTML CSS Support
+- Python
+- isort
 
-Coummunity Material Theme
-Electron Color Theme
-Material Icon Theme
-Night Owl
-Winter is Coming Theme
-SynthWave '84
+## Themes
+- Better C++ Syntax
+- Coummunity Material Theme
+- Electron Color Theme
+- Material Icon Theme
+- Night Owl
+- Noctis
+- SynthWave '84
+- Winter is Coming Theme
+- XD Theme
 
-GlassIt-VSC
-Power Mode
+## Others
+- GlassIt-VSC
+- Power Mode
