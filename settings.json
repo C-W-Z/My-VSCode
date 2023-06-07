@@ -55,6 +55,8 @@
     },
     /* VSCode的圖示主題 */
     "workbench.iconTheme": "material-icon-theme",
+    /* VSCode的顏色主題 */
+    "workbench.colorTheme": "Default Dark+",
     /* 自訂VSCode主題中各種顏色 */
     "workbench.colorCustomizations": {
         "editor.background": "#1E1E1E"
