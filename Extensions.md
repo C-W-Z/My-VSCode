@@ -8,7 +8,8 @@
 - Live Preview
 - Preview on Web Server
 - Polacode-2022
-- Remote - SSH
+- Remote Development
+- Unity
 
 ## Languages
 - C/C++ Extension Pack
