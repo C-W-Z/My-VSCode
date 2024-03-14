@@ -1,6 +1,6 @@
 {
     /* 字型 */
-    "editor.fontFamily": "XD, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "XD, 'LXGW WenKai', Consolas, 'Courier New', monospace",
     /* 字體粗細 */
     "editor.fontWeight": "200",
     /* 什麼時候顯示折疊(在行號旁) */
@@ -14,7 +14,7 @@
     /* 是否根據文件自動偵測editor.insertSpaces和editor.tabSize */
     "editor.detectIndentation": true,
     /* 按tab是否改成輸入空格 */
-    "editor.insertSpaces": false,
+    "editor.insertSpaces": true,
     /* 按tab輸入幾個空格 */
     "editor.tabSize": 4,
     /* 是否顯示空白和tab字元 */
@@ -37,11 +37,8 @@
     "editor.unicodeHighlight.invisibleCharacters": true,
     /* 是否啟用和ASCII混淆的字元的醒目提示 */
     "editor.unicodeHighlight.ambiguousCharacters": true,
-    /* 針對python */
-    "[python]": {
-        /* 貼上時是否自動format */
-        "editor.formatOnType": true
-    },
+    /* 貼上時是否自動format */
+    "editor.formatOnType": true,
     /* 自訂VSCode語法高亮顏色 */
     "editor.tokenColorCustomizations": {
         "textMateRules": [
@@ -54,8 +51,9 @@
             }
         ],
         "[Default Dark+]": {
-            "comments": "#27a818",
-            "functions": "#CCC541",
+            "types": "#41c9b0",
+            "comments": "#7d7d7d",
+            "functions": "#ccc541",
             "numbers": "#fa8500",
             "textMateRules": [
                 {
@@ -68,16 +66,47 @@
             ]
         }
     },
+    "editor.semanticTokenColorCustomizations": {
+        "[Default Dark+]": {
+            "enabled": true,
+            "rules": {
+                "constant": "#22c5ee",
+                "enumMember": "#22c5ee"
+            }
+        }
+    },
     /* VSCode的圖示主題 */
     "workbench.iconTheme": "material-icon-theme",
     /* VSCode的顏色主題 */
     "workbench.colorTheme": "Default Dark+",
     /* 自訂VSCode主題中各種顏色 */
     "workbench.colorCustomizations": {
-        "editor.background": "#1E1E1E"
+        "editor.background": "#1e1e1e",
+        "[Default Dark+]": {
+            "titleBar.activeBackground": "#1d212d",
+            "titleBar.activeForeground": "#cccccc",
+            "activityBar.background": "#1d212d",
+            "activityBarBadge.background": "#fa8500",
+            "tab.inactiveBackground": "#1d212d",
+            "tab.activeForeground": "#f4f4e4",
+            "tab.hoverForeground": "#fa8500",
+            "editorGroupHeader.tabsBackground":"#1d212d",
+            "tab.activeBackground": "#2f3649",
+            "statusBar.background": "#2f3649",
+            "statusBar.debuggingBackground": "#68217a",
+            "statusBar.noFolderBackground": "#333333",
+            "statusBar.foreground": "#cccccc",
+            "terminal.background": "#1d212d",
+            "terminal.foreground": "#cccccc",
+            "panel.background":"#1d212d",
+            "editor.foldBackground":"#2f3649cc",
+            "breadcrumb.focusForeground": "#fa8500"
+        }
     },
     /* 視窗標題列和功能表的外觀 */
     "window.titleBarStyle": "custom",
+    /* 視窗放大縮小程度 */
+    "window.zoomLevel": 1,
     /* 終端機是否啟用GPU加速 */
     "terminal.integrated.gpuAcceleration": "off",
     /* 預設終端機 */
@@ -87,5 +116,14 @@
     /* 終端機游標樣式 */
     "terminal.integrated.cursorStyle": "line",
     /* 終端機游標寬度(只有游標樣式為line時有效) */
-    "terminal.integrated.cursorWidth": 1
+    "terminal.integrated.cursorWidth": 1,
+    /* 比較文件差異時是否顯示沒有差異的區域 */
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    /* Markdown PDF相關設定 */
+    "markdown-pdf.displayHeaderFooter": false,
+    "markdown-pdf.highlightStyle": "github.css",
+    "markdown-pdf.styles": [
+        /* 自訂CSS樣式的路徑 */
+        "D:\\\\GitHub\\\\VSCode Settings\\\\markdownpdf.css"
+    ]
 }

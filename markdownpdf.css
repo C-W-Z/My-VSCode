@@ -1,0 +1,11 @@
+/* for inline code */
+:not(pre):not(.hljs)>code {
+    color: black;
+    /* background: whitesmoke; */
+    border-radius: 3px;
+    padding: 0px 3px;
+}
+/* link */
+a {
+    color: DodgerBlue;
+}
