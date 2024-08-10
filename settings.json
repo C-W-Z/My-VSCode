@@ -4,7 +4,7 @@
     /* 字體粗細 */
     "editor.fontWeight": "200",
     /* 什麼時候顯示折疊(在行號旁) */
-    "editor.showFoldingControls" :"mouseover",
+    "editor.showFoldingControls": "mouseover",
     /* 提示出現的延遲(ms) */
     "editor.quickSuggestionsDelay": 10,
     /* 貼上時是否自動format */
@@ -36,7 +36,7 @@
     /* 是否啟用隱形字元的醒目提示 */
     "editor.unicodeHighlight.invisibleCharacters": true,
     /* 是否啟用和ASCII混淆的字元的醒目提示 */
-    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
     /* 貼上時是否自動format */
     "editor.formatOnType": true,
     /* 自訂VSCode語法高亮顏色 */
@@ -75,10 +75,6 @@
             }
         }
     },
-    /* VSCode的圖示主題 */
-    "workbench.iconTheme": "material-icon-theme",
-    /* VSCode的顏色主題 */
-    "workbench.colorTheme": "Default Dark+",
     /* 自訂VSCode主題中各種顏色 */
     "workbench.colorCustomizations": {
         "editor.background": "#1e1e1e",
@@ -87,10 +83,10 @@
             "titleBar.activeForeground": "#cccccc",
             "activityBar.background": "#1d212d",
             "activityBarBadge.background": "#fa8500",
-            "tab.inactiveBackground": "#1d212d",
+            "tab.inactiveBackground": "#1e1e1e",
             "tab.activeForeground": "#f4f4e4",
             "tab.hoverForeground": "#fa8500",
-            "editorGroupHeader.tabsBackground":"#1d212d",
+            "editorGroupHeader.tabsBackground": "#1d212d",
             "tab.activeBackground": "#2f3649",
             "statusBar.background": "#2f3649",
             "statusBar.debuggingBackground": "#68217a",
@@ -98,15 +94,17 @@
             "statusBar.foreground": "#cccccc",
             "terminal.background": "#1d212d",
             "terminal.foreground": "#cccccc",
-            "panel.background":"#1d212d",
-            "editor.foldBackground":"#2f3649cc",
-            "breadcrumb.focusForeground": "#fa8500"
+            "panel.background": "#1d212d",
+            "editor.foldBackground": "#2f3649cc",
+            "breadcrumb.focusForeground": "#fa8500",
+            "activityBarTop.background": "#1d212d",
+            "sideBarActivityBarTop.border": "#1d212d",
+            "sideBar.background": "#1d212d",
         }
     },
+    "window.zoomLevel": 1,
     /* 視窗標題列和功能表的外觀 */
     "window.titleBarStyle": "custom",
-    /* 視窗放大縮小程度 */
-    "window.zoomLevel": 1,
     /* 終端機是否啟用GPU加速 */
     "terminal.integrated.gpuAcceleration": "off",
     /* 預設終端機 */
@@ -117,13 +115,88 @@
     "terminal.integrated.cursorStyle": "line",
     /* 終端機游標寬度(只有游標樣式為line時有效) */
     "terminal.integrated.cursorWidth": 1,
-    /* 比較文件差異時是否顯示沒有差異的區域 */
-    "diffEditor.hideUnchangedRegions.enabled": true,
     /* Markdown PDF相關設定 */
     "markdown-pdf.displayHeaderFooter": false,
     "markdown-pdf.highlightStyle": "github.css",
     "markdown-pdf.styles": [
         /* 自訂CSS樣式的路徑 */
         "D:\\\\GitHub\\\\VSCode Settings\\\\markdownpdf.css"
-    ]
+    ],
+    "omnisharp.useModernNet": false,
+    "remote.SSH.remotePlatform": {
+        "ws4.csie.org": "linux",
+        "ws5.csie.org": "linux",
+        "ws2.csie.org": "linux"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "C:/src/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    },
+    "C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+    "C_Cpp.files.exclude": {
+        "**/.vscode": true,
+        "**/.vs": true
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "todo-tree.tree.tagsOnly": true,
+    "material-icon-theme.hidesExplorerArrows": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.accessibilitySupport": "on",
+    "editor.fontLigatures": true,
+    "editor.glyphMargin": false,
+    "editor.lineNumbers": "off",
+    "editor.scrollbar.verticalScrollbarSize": 12,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.activityBar.location": "bottom",
+    "workbench.sideBar.location": "right",
+    "workbench.layoutControl.enabled": false,
+    "workbench.tree.indent": 12,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Default Dark+",
+    "window.commandCenter": false,
+    "window.dialogStyle": "custom",
+    "window.title": "${dirty}${rootName}${separator}${profileName}",
+    "window.menuBarVisibility": "toggle",
+    "explorer.confirmDelete": true,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": true,
+    "apc.parts.font.family": {
+        "titlebar": "Consolas",
+        "sidebar": "Consolas, 'LXGW WenKai'",
+        "statusbar": "Consolas, 'LXGW WenKai'",
+    },
+    "apc.header": {
+        "height": 30,
+        "default": 30,
+        "fontSize": 12
+    },
+    // "apc.stylesheet": {
+    //     ".title-label > h2": "display: none",
+    // },
+    "apc.statusBar": {
+        "position": "editor-bottom",
+        "fontSize": 11,
+        "height": 22,
+    },
+    "breadcrumbs.enabled": true,
+    "animations.Install-Method": "Apc Customize UI++",
+    "apc.imports": [
+        "file:///c:/Users/user/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+    ],
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "files.exclude": {
+        ".vscode": false
+    },
 }
